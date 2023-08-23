@@ -1,9 +1,18 @@
+import { ListItem, Quantity } from './StatsListElement.styled';
+import PropTypes from 'prop-types';
+
 export const StatsListElement = ({ listData: { key, value } }) => {
-  //   console.log(listData);
   return (
-    <li >
+    <ListItem>
       <span className="label">{key}</span>
-      <span className="quantity">{value}</span>
-    </li>
+      <Quantity className="quantity">{value}</Quantity>
+    </ListItem>
   );
+};
+
+StatsListElement.propTypes = {
+  listData: PropTypes.shape({
+    key: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired,
+  }).isRequired,
 };
