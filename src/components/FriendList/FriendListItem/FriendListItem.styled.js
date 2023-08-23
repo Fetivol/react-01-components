@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-const choseColor = props => {
-  if (!props.isOnline) {
-    return 'green';
-  }
-  return 'red';
-};
 export const ListItem = styled.li`
   display: flex;
   gap: 10px;
@@ -17,7 +11,7 @@ export const ListItem = styled.li`
 export const Status = styled.span`
   height: 8px;
   width: 8px;
-  background-color: ${choseColor};
+  background-color: ${props => (props.$status ? 'green' : 'blue')};
   border-radius: 50%;
   display: inline-block;
 `;
