@@ -3,6 +3,7 @@ import { List } from '../StatList/StatList.styled';
 import PropTypes from 'prop-types';
 
 export const StatList = ({ statisticData }) => {
+  console.log(statisticData);
   return (
     <List>
       {statisticData.map((data, index) => {

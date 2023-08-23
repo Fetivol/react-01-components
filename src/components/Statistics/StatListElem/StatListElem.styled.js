@@ -19,7 +19,7 @@ const getBgColor = props => {
 
 export const ListElement = styled.li`
   display: flex;
-  margin-top: 10px;
+
   padding-top: 10px;
   padding-bottom: 10px;
   width: 80px;

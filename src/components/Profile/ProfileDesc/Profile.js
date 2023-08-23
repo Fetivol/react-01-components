@@ -3,7 +3,6 @@ import { ProfileStats } from '../ProfileStats/ProfileStats';
 import { Wrapper } from './Profile.styled';
 import PropTypes from 'prop-types';
 
-// console.log(userData);
 export const Profile = ({
   userData: { username, tag, location, avatar, stats },
 }) => {

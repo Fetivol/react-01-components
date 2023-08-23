@@ -1,12 +1,11 @@
 import { StatList } from './StatList/StatList';
 import { Wrapper } from './Statistics.styled';
-// import statisticData from './data.json';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ statisticData }) => {
+export const Statistics = ({ title, statisticData }) => {
   return (
     <Wrapper className="statistic">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2>{title}</h2>}
       <StatList statisticData={statisticData} />
     </Wrapper>
   );
@@ -20,4 +19,5 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ).isRequired,
+  title: PropTypes.string,
 };
