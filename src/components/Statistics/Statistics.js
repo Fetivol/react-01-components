@@ -1,9 +1,9 @@
 import { StatList } from './StatList/StatList';
 import { Wrapper } from './Statistics.styled';
-import statisticData from './data.json';
+// import statisticData from './data.json';
 import PropTypes from 'prop-types';
 
-export const Statistics = () => {
+export const Statistics = ({ statisticData }) => {
   return (
     <Wrapper className="statistic">
       <h2 className="title">Upload stats</h2>

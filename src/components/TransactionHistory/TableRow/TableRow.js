@@ -14,7 +14,7 @@ export const TableRow = ({ itemData: { type, amount, currency } }) => {
 TableRow.propTypes = {
   itemData: PropTypes.shape({
     type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
+    amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
   }).isRequired,
 };
